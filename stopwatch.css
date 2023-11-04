@@ -1,0 +1,144 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    background-color: #79737e;
+}
+
+/* Top Title Styles */
+.titleTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+/* Stopwatch Container Styles */
+.stopwatchContainer {
+    margin-top: 3%;
+    background: #2c2d35;
+    height: 50vh;
+    width: 50%;
+    min-height: 50vh;
+    max-width: 800px;
+}
+
+/* Centering the Stopwatch */
+.stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Displayed Time Styles */
+.timeDisplay {
+    margin-top: 17%;
+    text-align: center;
+    font-size: 2.8rem;
+    color: white;
+}
+
+/* Styles for Stopwatch Buttons */
+.stopwatchButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+}
+
+/* Start Button Styles */
+.start-btn {
+    background-color: #8FF299;
+    color: black;
+    border: none;
+    padding: 1rem 1.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* Hover Styles for Start Button */
+.start-btn:hover {
+    background-color: #6bb373;
+    color: white;
+}
+
+/* Pause Button Styles */
+.pause-btn {
+    background-color: #8fe6f2;
+    color: black;
+    border: none;
+    padding: 1rem 1.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* Hover Styles for Pause Button */
+.pause-btn:hover {
+    background-color: #65a5ad;
+    color: white;
+}
+
+/* Stop Button Styles */
+.stop-btn {
+    background-color: #e78b8b;
+    color: black;
+    border: none;
+    padding: 1rem 1.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* Hover Styles for Stop Button */
+.stop-btn:hover {
+    background-color: #995c5c;
+    color: white;
+}
+
+/* Media Query for Medium Screens (Tablets, etc.) */
+@media (max-width: 1024px) {
+    .stopwatchContainer {
+        width: 90%;
+    }
+
+    .timeDisplay {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Query for Small Screens (Smartphones, etc.) */
+@media (max-width: 768px) {
+    .stopwatchContainer {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .timeDisplay {
+        margin-top: 28%;
+        font-size: 2rem;
+    }
+
+    /* Adjustments for Buttons on Small Screens */
+    .start-btn,
+    .pause-btn,
+    .stop-btn {
+        padding: 0.7rem 1.1rem;
+        font-size: 1.5rem;
+    }
+}
