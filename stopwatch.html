@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Stopwatch</title>
+    <!-- Font Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <!-- Link to CSS Styling -->
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="titleTop">
+        <h1>STOPWATCH:</h1>
+    </div>
+
+    <section class="stopwatch">
+        <div class="stopwatchContainer">
+
+            <div class="timeDisplay">
+                <h1 id="time">00:00:00</h1>
+            </div>
+
+            <section class="stopwatchButtons">
+                <!-- Start Button -->
+                <button class="start-btn" onclick="start()">Start</button>
+                <!-- Pause Button -->
+                <button class="pause-btn" onclick="pause()">Pause</button>
+                <!-- Stop Button -->
+                <button class="stop-btn" onclick="stop()">Stop</button>
+            </section>
+        </div>
+    </section>
+
+</body>
+
+<!-- Link to JavaScript -->
+<script src="stopwatch.js"></script>
+
+</html>
